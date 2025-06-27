@@ -3,36 +3,38 @@
 
 body {
     height: 100vh;
+    width: 100%;
     margin: 0;
-    overflow: scroll;
+    overflow: auto;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     background-color: #484a47;
     font-family: "Playfair Display";
     color: #cecbbf;
+    flex-wrap: wrap;
+    font-size: 1vw;
 }
 
 .header {
+    flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 1;
     padding: 8px;
+    flex-wrap: wrap;
 }
 
 .small-logo {
-    flex: 1;
+    flex: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 50px;
-    margin-left: 8px;
-    margin-right: 32px;
 }
 
 .big-logo {
-    flex: 1;
+    flex: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +42,7 @@ body {
 }
 
 .navigation {
-    flex: 1;
+    flex: auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -50,7 +52,8 @@ body {
 ul {
     display: flex;
     list-style-type: none;
-    gap: 48px;
+    gap: 32px;
+    flex-wrap: wrap;
 }
 
 a {
@@ -60,10 +63,11 @@ a {
 }
 
 .hero {
+    flex: 10;
     display: flex;
-    flex: 20;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 8px;
     background-color: #5c6d70;
 }
@@ -72,28 +76,21 @@ a {
     display: flex;
     flex-direction: column;
     flex: 1;
-    height: 100%;
     padding: 8px;
+    border: sold blue;
 }
 
 .hero-header {
-    flex: 1;
     color: #cecbbf;
     font-style: italic;
 }
 
 .hero-text {
-    flex: 1;
     color: #cecbbf;
-    font-size: 20px;
 }
 
 .jump-scheduler-button {
-    flex: 1;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
     font-weight: bold;
     background-color: #cecbbf;
     color: #b1740f;
@@ -103,7 +100,7 @@ a {
 
 .hero-right {
     flex: 2;
-    height: 100%;
+    min-height: 300px;
 }
 
 .portfolio-container {
@@ -121,8 +118,8 @@ a {
     flex-direction: column;
     padding: 8px;
     margin: 8px;
-    height: 200px;
-    width: 200px;
+    max-height: 200px;
+    max-width: 200px;
     text-align: center;
     border: solid #cecbbf;
 }
@@ -137,15 +134,14 @@ a {
     align-items: center;
     padding: 8px;
     background-color: #5c6d70;
+    flex-wrap: wrap;
 }
 
 .quote-body {
-    font-size: 28px;
     text-align: center;
 }
 
 .quote-attribution {
-    font-size: 20px;
     text-align: center;
     font-style: italic;
 }
@@ -154,6 +150,7 @@ a {
     flex: 10;
     display: flex;
     padding: 8px;
+    flex-wrap: wrap;
 }
 
 .scheduler-text {
@@ -161,13 +158,12 @@ a {
 }
 
 .calendar {
-    flex: 1;
+    flex: auto;
     text-align: center;
     border: solid #cecbbf;
 }
 
 .form-container {
-    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -180,15 +176,14 @@ input {
 }
 
 #tell-me-input {
-    height: 100px;
+    max-height: 100px;
 }
 
 .submit-button {
-    flex: 1;
+    flex: auto;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
     font-weight: bold;
     background-color: #cecbbf;
     color: #b1740f;
@@ -197,9 +192,9 @@ input {
 }
 
 .footer {
+    flex: 1;
     padding: 8px;
     text-align: center;
-    flex: 1;
     justify-content: center;
     align-items: center;
     background-color: #5c6d70;
