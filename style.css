@@ -104,7 +104,6 @@ a {
 .hero-right {
     flex: 2;
     height: 100%;
-    border: solid #cecbbf;
 }
 
 .portfolio-container {
