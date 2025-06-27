@@ -63,7 +63,7 @@ a {
 }
 
 .hero {
-    flex: 10;
+    flex: 20;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,9 +73,9 @@ a {
 }
 
 .hero-left{
+    flex: 1;
     display: flex;
     flex-direction: column;
-    flex: 1;
     padding: 8px;
     border: sold blue;
 }
@@ -96,11 +96,14 @@ a {
     color: #b1740f;
     border: none;
     border-radius: 20px;
+    font-family: "Playfair-Display";
+    font-size: 1vw;
 }
 
 .hero-right {
     flex: 2;
-    min-height: 300px;
+    border: none;
+    height: 100%;
 }
 
 .portfolio-container {
@@ -118,8 +121,8 @@ a {
     flex-direction: column;
     padding: 8px;
     margin: 8px;
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 300px;
+    max-width: 300px;
     text-align: center;
     border: solid #cecbbf;
 }
@@ -130,15 +133,18 @@ a {
 
 .quote-container {
     flex: 10;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 8px;
     background-color: #5c6d70;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .quote-body {
     text-align: center;
+    font-size: 2vw;
 }
 
 .quote-attribution {
@@ -158,12 +164,13 @@ a {
 }
 
 .calendar {
-    flex: auto;
+    flex: 1;
     text-align: center;
     border: solid #cecbbf;
 }
 
 .form-container {
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -173,30 +180,33 @@ a {
 input {
     background-color: #cecbbf;
     color:#b1740f;
+    font-family: "Playfair-Display";
+    font-size: 1vw;
 }
 
 #tell-me-input {
+    flex: 1;
     max-height: 100px;
 }
 
 .submit-button {
-    flex: auto;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-weight: bold;
     background-color: #cecbbf;
     color: #b1740f;
     border: none;
     border-radius: 20px;
+    font-family: "Playfair-Display";
+    font-size: 1vw;
 }
 
 .footer {
     flex: 1;
+    margin-top: auto;
     padding: 8px;
     text-align: center;
     justify-content: center;
     align-items: center;
     background-color: #5c6d70;
-    margin-top: auto;
 }
