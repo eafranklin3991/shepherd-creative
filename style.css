@@ -2,27 +2,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 body {
-    height: 100vh;
-    width: 100%;
-    margin: 0;
-    overflow: auto;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     background-color: #484a47;
     font-family: "Playfair Display";
     color: #cecbbf;
-    flex-wrap: wrap;
-    font-size: 1vw;
+    font-size: 3.2vw;
 }
 
 .header {
-    flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px;
+    padding: 1em;
     flex-wrap: wrap;
+}
+
+.hero {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    background-color: #5c6d70;
+}
+
+.portfolio-container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.quote-container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: #5c6d70;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.scheduler-container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.footer {
+    padding: 1em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c6d70;
 }
 
 .small-logo {
@@ -31,6 +74,7 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 50px;
+    margin-right: 2em;
 }
 
 .big-logo {
@@ -46,14 +90,13 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 8px;
 }
 
 ul {
     display: flex;
-    list-style-type: none;
-    gap: 32px;
     flex-wrap: wrap;
+    gap: 3em;
+    list-style-type: none;
 }
 
 a {
@@ -62,31 +105,22 @@ a {
     font-family: "Playfair Display";
 }
 
-.hero {
-    flex: 20;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 8px;
-    background-color: #5c6d70;
-}
-
 .hero-left{
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 8px;
-    border: sold blue;
+    padding: 1em;
 }
 
 .hero-header {
     color: #cecbbf;
     font-style: italic;
+    font-size: 3.2vw;
 }
 
 .hero-text {
     color: #cecbbf;
+    margin-bottom: 2em;
 }
 
 .jump-scheduler-button {
@@ -95,9 +129,10 @@ a {
     background-color: #cecbbf;
     color: #b1740f;
     border: none;
-    border-radius: 20px;
+    border-radius: 20em;
     font-family: "Playfair-Display";
-    font-size: 1vw;
+    font-size: 3vh;
+    width: 100%;
 }
 
 .hero-right {
@@ -106,21 +141,14 @@ a {
     height: 100%;
 }
 
-.portfolio-container {
-    flex: 10;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 .portfolio-card {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 8px;
-    margin: 8px;
+    padding: 1em;
+    margin: 1em;
     max-height: 300px;
     max-width: 300px;
     text-align: center;
@@ -128,35 +156,20 @@ a {
 }
 
 .portfolio-card-text {
-    margin: 8px;
-}
-
-.quote-container {
-    flex: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    background-color: #5c6d70;
-    flex-wrap: wrap;
-    flex-direction: column;
+    margin: 1em;
 }
 
 .quote-body {
+    flex: 1;
     text-align: center;
-    font-size: 2vw;
+    font-size: 3.2vw;
 }
 
 .quote-attribution {
+    flex: 1;
     text-align: center;
     font-style: italic;
-}
-
-.scheduler-container {
-    flex: 10;
-    display: flex;
-    padding: 8px;
-    flex-wrap: wrap;
+    font-size: 3.2vw;
 }
 
 .scheduler-text {
@@ -173,20 +186,24 @@ a {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin: 8px;
+    gap: 1em;
+    margin: 1em;
 }
 
 input {
     background-color: #cecbbf;
     color:#b1740f;
     font-family: "Playfair-Display";
-    font-size: 1vw;
+    font-size: 1em;
 }
 
-#tell-me-input {
+textarea {
     flex: 1;
-    max-height: 100px;
+    background-color: #cecbbf;
+    color:#b1740f;
+    font-family: "Playfair-Display";
+    font-size: 1em;
+    border-radius: 5px;
 }
 
 .submit-button {
@@ -196,17 +213,7 @@ input {
     background-color: #cecbbf;
     color: #b1740f;
     border: none;
-    border-radius: 20px;
+    border-radius: 20em;
     font-family: "Playfair-Display";
-    font-size: 1vw;
-}
-
-.footer {
-    flex: 1;
-    margin-top: auto;
-    padding: 8px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: #5c6d70;
+    font-size: 1em;
 }
