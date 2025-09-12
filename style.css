@@ -123,20 +123,20 @@ body {
     font-size: 3rem;
 }
 
-ul {
+.navigation {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
     list-style-type: none;
 }
 
-li {
+.nav-link {
     flex: 1;
+    color: #3C6067;
 }
 
 a {
     text-decoration: none;
-    color: #FBFBFF;
 }
 
 .hero-left{
@@ -189,17 +189,6 @@ a {
 
 .portfolio-card-text {
     margin: 1rem;
-}
-
-.quote-body {
-    flex: 3;
-    text-align: center;
-}
-
-.quote-attribution {
-    flex: 1;
-    text-align: center;
-    font-style: italic;
 }
 
 .scheduler-text {
