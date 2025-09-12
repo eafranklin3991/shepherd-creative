@@ -4,70 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>The Shepherd Creative|Commercial Vidoegraphy</title>
+    <title>The Shepherd | Commercial Vidoegraphy</title>
 </head>
 <body>
-    <div class="header">
-        <img class="big-logo" src="images/theshepherd_horizontal_mist.svg">
+    <div id="header">
+        <img id="logo" src="images/theshepherd_horizontal_mist.svg">
 
-        <div class="navigation">
-            <ul>
-                <li class="nav-link"><a href="#">Home</a></li>
-                <li class="nav-link"><a href="#">About</a></li>
-                <li class="nav-link"><a href="#">Services</a></li>
-                <li class="nav-link"><a href="#">Portfolio</a></li>
-                <li class="nav-link"><a href="#">Contact</a></li>
+        <div id="navigation">
+            <ul role="list">
+                <li><a href="#portfolio-container">My Portfolio</a></li>
+                <li><a href="#schedule-container">Schedule a Consultation</a></li>
             </ul>
         </div>
     </div>
 
-    <div class="hero">
-        <div class="hero-left">
-            <h1 class="hero-header">You Don't Do Cookie-Cutter</h1>
-            <p class="hero-text">
-                And neither do we... Praesentium, dicta autem? Facilis tempora dolorum quas incidunt officia rem commodi, illo consectetur laudantium? Sint ea ad libero eum quam. Dolor, rerum.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deserunt ratione neque totam voluptatem alias deleniti. Magnam fuga quisquam facere, doloremque alias ratione expedita nihil consectetur accusamus ipsa nam excepturi?
-            </p>
-            <button class="jump-scheduler-button">Schedule a Consultation</button>
+    <div id="hero">
+        <div id="hero-left">
+            <h1 id="hero-header">You Don't Do Cookie-Cutter.</h1>
+            <h2>
+                <span class="special-text">And neither do I... </span>
+                At the Shepherd, we help you build a <span class="special-text">unique</span> content system that speaks to your audience, builds trust, and drives action.
+            </h2>
+            <button class="schedule-button">Schedule a Consultation</button>
         </div>
 
-        <iframe class="hero-right" src="https://player.vimeo.com/video/1080413327?h=f2007ac1bc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"></iframe>
+        <div id="hero-right">
+            <iframe src="https://player.vimeo.com/video/1080413327?h=f2007ac1bc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"></iframe>
+        </div>
 
     </div>
 
-    <div class="portfolio-container">
+    <div id="portfolio-container">
         <div class="portfolio-card">
-            <img src="#">
-            <div class="portfolio-card-text">This is a video link description!</div>
+            <iframe src="https://player.vimeo.com/video/1080413327?h=f2007ac1bc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"></iframe>
+            <div class="text">This is a description!</div>
         </div>
         <div class="portfolio-card">
-            <img src="#">
-            <div class="portfolio-card-text">This is a video link description!</div>
+            <iframe src="https://player.vimeo.com/video/1080413327?h=f2007ac1bc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"></iframe>
+            <div class="text">This is a description!</div>
         </div>
         <div class="portfolio-card">
-            <img src="#">
-            <div class="portfolio-card-text">This is a video link description!</div>
+            <iframe src="https://player.vimeo.com/video/1080413327?h=f2007ac1bc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"></iframe>
+            <div class="text">This is a description!</div>
         </div>
         <div class="portfolio-card">
-            <img src="#">
-            <div class="portfolio-card-text">This is a video link description!</div>
+            <iframe src="https://player.vimeo.com/video/1080413327?h=f2007ac1bc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"></iframe>
+            <div class="text">This is a description!</div>
         </div>
     </div>
 
-    <div class="scheduler-container">
-        <p class="scheduler-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi perspiciatis, voluptates unde animi cum voluptate eum corporis eius quod aut, atque totam, blanditiis laborum libero! Neque quas obcaecati corrupti omnis.</p>
-
-        <div class="calendar">INSERT CALENDAR</div>
+    <div id="schedule-container">
+        <div id="calendar-container">INSERT CALENDAR</div>
         
-        <div class="form-container">
+        <div id="form-container">
             <input id="name-input" type="text" placeholder="Name">
             <input id="email-input" type="email" placeholder="Email">
             <input id="phone-number-input" type="phone" placeholder="Phone Number">
-            <textarea id="tell-me-more-box" placeholder="Tell me more..."></textarea>
-            <button class="submit-button">Schedule a Consultation</button>
+            <textarea id="tell-me-more-box" placeholder="Tell me more about your company..."></textarea>
+            <button class="schedule-button">Schedule a Consultation</button>
         </div>
     </div>
 
-    <div class="footer">© 2025 The Shepherd Creative. All rights reserved.</div>
+    <div id="footer">© 2025 The Shepherd Creative. All rights reserved.</div>
 </body>
 </html>
