@@ -32,8 +32,8 @@ body {
     flex-direction: column;
     background-color: #484a47;
     font-family: "Playfair Display";
-    color: #cecbbf;
-    font-size: 1em;
+    color: #FBFBFF;
+    font-size: 1rem;
     margin: 0;
 }
 
@@ -65,8 +65,8 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 1em;
-    padding: 1em;
+    margin-bottom: 2px;
+    padding: 2px;
 }
 
 .hero {
@@ -75,7 +75,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #5c6d70;
+    background-color: #50B2C0;
 }
 
 .portfolio-container {
@@ -91,7 +91,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5c6d70;
+    background-color: #50B2C0;
     flex-wrap: wrap;
     flex-direction: column;
 }
@@ -108,7 +108,7 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: #5c6d70;
+    background-color: #50B2C0;
 }
 
 .small-logo {
@@ -117,7 +117,7 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 50px;
-    margin-right: 2em;
+    margin-right: 2px;
 }
 
 .big-logo {
@@ -138,7 +138,7 @@ body {
 ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 3em;
+    gap: 3rem;
     list-style-type: none;
 }
 
@@ -148,7 +148,7 @@ li {
 
 a {
     text-decoration: none;
-    color: #cecbbf;
+    color: #FBFBFF;
     font-family: "Playfair Display";
 }
 
@@ -156,7 +156,7 @@ a {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin: 1em;
+    margin: 2px;
 }
 
 .hero-header {
@@ -166,18 +166,18 @@ a {
 }
 
 .hero-text {
-    color: #cecbbf;
+    color: #FBFBFF;
 }
 
 .jump-scheduler-button {
     text-align: center;
     font-weight: bold;
-    background-color: #cecbbf;
-    color: #b1740f;
+    background-color: #FBFBFF;
+    color: #FF9A00;
     border: none;
-    border-radius: 20em;
+    border-radius: 20rem;
     font-family: "Playfair-Display";
-    font-size: 3vh;
+    font-size: 1rem;
     width: 100%;
 }
 
@@ -193,22 +193,21 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 1em;
-    margin: 1em;
+    padding: 1rem;
+    margin: 1rem;
     max-height: 500px;
     max-width: 500px;
     text-align: center;
-    border: solid #cecbbf;
+    border: solid #FBFBFF;
 }
 
 .portfolio-card-text {
-    margin: 1em;
+    margin: 1rem;
 }
 
 .quote-body {
     flex: 3;
     text-align: center;
-    border: solid purple;
 }
 
 .quote-attribution {
@@ -219,37 +218,37 @@ a {
 
 .scheduler-text {
     flex: 1;
-    margin: 1em;
+    margin: 1rem;
 }
 
 .calendar {
     flex: 1;
     text-align: center;
-    border: solid #cecbbf;
-    margin: 1em;
+    border: solid #FBFBFF;
+    margin: 1rem;
 }
 
 .form-container {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    margin: 1em;
+    gap: 1rem;
+    margin: 1rem;
 }
 
 input {
     background-color: #cecbbf;
-    color:#b1740f;
+    color: #191919;
     font-family: "Playfair-Display";
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 textarea {
     flex: 4;
     background-color: #cecbbf;
-    color:#b1740f;
+    color: #FBFBFF;
     font-family: "Playfair-Display";
-    font-size: 1em;
+    font-size: 1rem;
     border-radius: 5px;
 }
 
@@ -258,10 +257,10 @@ textarea {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    background-color: #cecbbf;
-    color: #b1740f;
+    background-color: #FBFBFF;
+    color: #FF9A00;
     border: none;
-    border-radius: 20em;
+    border-radius: 20rem;
     font-family: "Playfair-Display";
-    font-size: 1em;
+    font-size: 1rem;
 }
