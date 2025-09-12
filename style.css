@@ -30,9 +30,9 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background-color: #191919;
+    background-color: #FFFFFF;
     font-family: "Playfair Display";
-    color: #FBFBFF;
+    color: #3C6067;
     font-size: 1rem;
     margin: 0;
 }
@@ -75,7 +75,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #50B2C0;
+    background-color: #0C0A3E;
 }
 
 .portfolio-container {
@@ -91,7 +91,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #50B2C0;
+    background-color: #0C0A3E;
     flex-wrap: wrap;
     flex-direction: column;
 }
@@ -104,20 +104,10 @@ body {
 }
 
 .footer {
-    height: 5vh;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: #50B2C0;
-}
-
-.small-logo {
-    flex: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 50px;
-    margin-right: 2px;
+    background-color: #0C0A3E;
 }
 
 .big-logo {
@@ -161,20 +151,20 @@ a {
 }
 
 .hero-header {
-    color: #FBFBFF;
+    color: #3C6067;
     font-style: italic;
     font-size: 3.2vw;
 }
 
 .hero-text {
-    color: #FBFBFF;
+    color: #3C6067;
 }
 
 .jump-scheduler-button {
     text-align: center;
     font-weight: bold;
-    background-color: #FBFBFF;
-    color: #FF9A00;
+    background-color: #FFFFFF;
+    color: #3C6067;
     border: none;
     border-radius: 20rem;
     font-family: "Playfair-Display";
@@ -199,7 +189,7 @@ a {
     max-height: 500px;
     max-width: 500px;
     text-align: center;
-    border: solid #FBFBFF;
+    border: solid #220C10;
 }
 
 .portfolio-card-text {
@@ -225,7 +215,7 @@ a {
 .calendar {
     flex: 1;
     text-align: center;
-    border: solid #FBFBFF;
+    border: solid #220C10;
     margin: 1rem;
 }
 
@@ -238,16 +228,16 @@ a {
 }
 
 input {
-    background-color: #cecbbf;
-    color: #191919;
+    background-color: #220C10;
+    color: #220C10;
     font-family: "Playfair-Display";
     font-size: 1rem;
 }
 
 textarea {
     flex: 4;
-    background-color: #cecbbf;
-    color: #FBFBFF;
+    background-color: #220C10;
+    color: #220C10;
     font-family: "Playfair-Display";
     font-size: 1rem;
     border-radius: 5px;
@@ -258,8 +248,8 @@ textarea {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    background-color: #FBFBFF;
-    color: #FF9A00;
+    background-color: #220C10;
+    color: #220C10;
     border: none;
     border-radius: 20rem;
     font-family: "Playfair-Display";
