@@ -4,10 +4,14 @@
 
 :root {
   line-height: 1.5;
+  --primary-color: #3C6067;
+  --secondary-color: #FFFFFF;
+  --tertiary-color: #FF9A00;
 }
 
 h1, h2, h3, h4, h5, figure, p, ol, ul {
   margin: 0;
+  font-size: calc(0.75rem + 1.5vw);
 }
 
 ol[role="list"], ul[role="list"] {
@@ -28,6 +32,7 @@ img {
 
 button {
     padding: 0;
+    border: 1px solid var(--primary-color);
 }
 
 iframe {
@@ -152,18 +157,19 @@ h2 {
     text-align: center;
 }
 
-/* Schedule Section */
-
-.schedule-button {
+#schedule-button {
     text-align: center;
     font-weight: bold;
-    background-color: #FFFFFF;
-    color: #FF9A00;
-    border: none;
+    background-color: #3C6067;
+    color: #FFFFFF;
+    border: solid 1px #3C6067;
     border-radius: 20rem;
     font-size: 2rem;
     width: 85%;
+    text-decoration: none;
 }
+
+/* Schedule Section */
 
 #calendar-container {
     flex: 1;
