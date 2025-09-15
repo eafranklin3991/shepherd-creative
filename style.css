@@ -1,3 +1,5 @@
+/* General */
+
 @import "modern-normalize";
 
 :root {
@@ -48,6 +50,24 @@ h2 {
     color: #3C6067;
 }
 
+.container {
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#footer {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #0C0A3E;
+    color: #FFFFFF;
+}
+
+/* Header Section */
+
 #header {
     display: flex;
     justify-content: space-between;
@@ -85,6 +105,8 @@ h2 {
     text-decoration: underline;
 }
 
+/* Hero Section */
+
 #hero {
     height: 50vh;
     display: flex;
@@ -114,6 +136,24 @@ h2 {
     font-size: 4rem;
 }
 
+.special-text {
+    color: #FF9A00;
+    font-style: italic;
+}
+
+/* Portfolio Section */
+
+.portfolio-card {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Schedule Section */
+
 .schedule-button {
     text-align: center;
     font-weight: bold;
@@ -123,36 +163,6 @@ h2 {
     border-radius: 20rem;
     font-size: 2rem;
     width: 85%;
-}
-
-.special-text {
-    color: #FF9A00;
-    font-style: italic;
-}
-
-.container {
-    height: 50vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#footer {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: #0C0A3E;
-    color: #FFFFFF;
-}
-
-.portfolio-card {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
 }
 
 #calendar-container {
@@ -192,6 +202,8 @@ textarea {
 textarea::placeholder {
     color: #FFFFFF;
 }
+
+/* Mobile Section */
 
 @media (max-width: 786px) {
     #header {
