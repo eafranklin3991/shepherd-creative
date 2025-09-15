@@ -45,7 +45,7 @@ body {
 
 h2 {
     font-size: 2rem;
-    color: #FFFFFF;
+    color: #3C6067;
 }
 
 #header {
@@ -90,7 +90,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0C0A3E;
+    background-color: #FFFFFF;
 }
 
 #hero-left{
@@ -130,18 +130,11 @@ h2 {
     font-style: italic;
 }
 
-#portfolio-container {
+.container {
     height: 50vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-#schedule-container {
-    height: 50vh;
-    display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -202,14 +195,16 @@ textarea::placeholder {
 
 @media (max-width: 786px) {
     #header {
-        height: 100vh;
+        height: 25vh;
     }
 
     #hero {
+        flex-wrap: wrap;
         height: 100vh;
     }
 
     #portfolio-container {
+        flex-wrap: wrap;
         height: 100vh;
     }
 
@@ -221,7 +216,11 @@ textarea::placeholder {
         flex: 0;
         height: 10%;
         width: 100%;
-        margin-left: 0px;
-        margin-bottom: 0px;
+        margin: 0;
+    }
+
+    #navigation {
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 }
