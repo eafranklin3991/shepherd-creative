@@ -102,7 +102,6 @@ h2 {
 #navigation a {
     text-decoration: none;
     color: #3C6067;
-    font-style: italic;
     font-size: 2rem;
 }
 
@@ -137,13 +136,11 @@ h2 {
 
 #hero-header {
     color: #FF9A00;
-    font-style: italic;
     font-size: 4rem;
 }
 
 .special-text {
     color: #FF9A00;
-    font-style: italic;
 }
 
 /* Portfolio Section */
