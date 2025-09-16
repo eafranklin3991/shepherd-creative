@@ -35,24 +35,18 @@ button {
     border: 1px solid var(--primary-color);
 }
 
-iframe {
-    border: none;
-    width: 100%;
-    height: 100%;
-}
-
 body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    color: #3C6067;
+    color: var(--primary-color);
     font-size: 1rem;
     margin: 0;
 }
 
 h2 {
     font-size: 2rem;
-    color: #3C6067;
+    color: var(--primary-color);
 }
 
 .container {
@@ -67,8 +61,8 @@ h2 {
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: #0C0A3E;
-    color: #FFFFFF;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 /* Header Section */
@@ -78,18 +72,12 @@ h2 {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin: 1rem;
 }
 
 #logo {
-    flex: 1;
-    height: 60%;
+    height: 25%;
     width: 25%;
-    margin-left: 5px;
-    margin-bottom: 5px;
-}
-
-#navigation {
-    flex: 1;
 }
 
 #navigation ul {
@@ -97,11 +85,12 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 2rem;
 }
 
 #navigation a {
     text-decoration: none;
-    color: #3C6067;
+    color: var(--primary-color);
     font-size: 2rem;
 }
 
@@ -113,34 +102,34 @@ h2 {
 
 #hero {
     height: 50vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FFFFFF;
 }
 
-#hero-left{
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-left: 5px;
-    margin-bottom: 5px;
+.slideshow-container {
+    position: relative;
+    width: 100%;
 }
 
-#hero-right {
-    height: 100%;
-    width: 50%;
+.slideshow {
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    z-index: 1;
+    object-fit: cover;
 }
 
-#hero-header {
-    color: #FF9A00;
-    font-size: 4rem;
+.overlay-container {
+    position: absolute;
+    width: 100%;
+    background-color: var(--secondary-color);
+    opacity: 0.6;
+    color: var(--primary-color);
+    top: 8rem;
+    text-align: center;
+    font-size: 1.2rem;
 }
 
-.special-text {
-    color: #FF9A00;
+.slideshow-heading {
+    position: absolute;
 }
 
 /* Portfolio Section */
