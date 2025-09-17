@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Shepherd specializes in commercial videography and strategic marketing for small businesses.">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/TheShepherd_submark_mist.png">
     <title>The Shepherd | Commercial Videography</title>
     <script src="script.js" defer></script>
 </head>
@@ -11,19 +13,19 @@
 
     <!-- Navigation -->
 
-    <div class="big-container" id="navigation-container">
+    <nav class="big-container" id="navigation-container">
 
         <div class="container" id="logo-container">
-            <img id="logo" src="images/theshepherd_horizontal_mist.svg">
+            <img id="logo" src="images/theshepherd_horizontal_mist.svg" alt="The Shepherd Creative logo">
         </div>
 
         <!-- Hamburger Icon -->
 
-        <div id="hamburger" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+        <button id="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
         <!-- Menu Items -->
         <div class="container" id="menu">
@@ -32,7 +34,7 @@
             <a href="#">Schedule a Consultation</a>
         </div>
 
-    </div>
+    </nav>
 
     <!-- Hero -->
 
@@ -40,7 +42,7 @@
 
         <div class="container" id="slideshow-container">
             
-            <video id="slideshow" src="videos/slideshow.mp4" muted autoplay loop></video>
+            <video id="slideshow" src="videos/slideshow.mp4" muted autoplay loop alt="Slideshow of The Shepherd's portfolio."></video>
             
             <div class="container" id="slideshow-text">
                 <h2 id="slideshow-heading">Dynamic Marketing That Takes Chances</h2>
