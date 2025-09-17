@@ -2,32 +2,42 @@
 
 @import "modern-normalize";
 
+@font-face {
+    font-family: "Spinnaker";
+    src: url(fonts/Spinnaker/Spinnaker-Regular.ttf) format("truetype");
+}
+
 :root {
-  line-height: 1.5;
   --primary-color: #3C6067;
   --secondary-color: #FFFFFF;
   --tertiary-color: #FF9A00;
+  --background-color: #FFFFFF80;
+
+  --default-font-size: calc(0.75rem + 1.5vw);
 }
 
-h1, h2, h3, h4, h5, figure, p, ol, ul {
-  margin: 0;
-  font-size: calc(0.75rem + 1.5vw);
+h1, h2, h3, p {
+    margin: 0;
 }
 
-ol[role="list"], ul[role="list"] {
-  list-style: none;
-  padding-inline: 0;
-  padding-inline-start: 0;
-}
+html, body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 
-h1, h2, h3, h4, h5 {
-  font-size: inherit;
-  font-weight: inherit;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    color: var(--primary-color);
+    font-size: var(--default-font-size);
+    font-family: "Spinnaker";
+    line-height: 1.5;
 }
 
 img {
-  display: block;
-  max-inline-size: 100%;
+    display: block;
+    max-inline-size: 100%;
 }
 
 button {
@@ -35,21 +45,16 @@ button {
     border: 1px solid var(--primary-color);
 }
 
-body {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    color: var(--primary-color);
-    font-size: 1rem;
-    margin: 0;
+a {
+    text-decoration: none;
+    color: var(--primary-color)
 }
 
-h2 {
-    font-size: 2rem;
-    color: var(--primary-color);
+a:hover {
+    text-decoration: underline;
 }
 
-.container {
+.big-container {
     height: 50vh;
     display: flex;
     justify-content: space-around;
@@ -58,78 +63,102 @@ h2 {
 }
 
 #footer {
-    text-align: center;
+    display: flex;
     justify-content: center;
     align-items: center;
+
+    text-align: center;
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
 
-/* Header Section */
+/* Navigation Section */
 
-#header {
+#navigation-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 1rem;
+
+    height: 10vh;
+    padding: 0.5rem;
 }
 
-#logo {
-    height: 25%;
+#logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
     width: 25%;
 }
 
-#navigation ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 2rem;
+#hamburger {
+    display: inline-block;
+    cursor: pointer;
 }
 
-#navigation a {
+#hamburger div {
+    background-color: var(--primary-color);
+    transition: 0.4s;
+    height: 0.2rem;
+    width: 5rem;
+    margin: 1rem;
+}
+
+#menu {
+    display: none;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 8rem;
+    right: 0;
+    width: 50rem;
+    z-index: 1;
+}
+
+#menu a {
+    display: block;
     text-decoration: none;
     color: var(--primary-color);
-    font-size: 2rem;
-}
-
-#navigation a:hover {
-    text-decoration: underline;
+    padding: 1rem;
 }
 
 /* Hero Section */
 
-#hero {
-    height: 50vh;
-}
-
-.slideshow-container {
+#slideshow-container {
     position: relative;
     width: 100%;
+    height: 100%;
 }
 
-.slideshow {
+#slideshow {
     position: absolute;
-    height: 50vh;
+    height: 100%;
     width: 100%;
-    z-index: 1;
+    z-index: -1;
     object-fit: cover;
 }
 
-.overlay-container {
+#slideshow-text {
+    display: flex;
+    flex-direction: column;
+
     position: absolute;
-    width: 100%;
-    background-color: var(--secondary-color);
-    opacity: 0.6;
+    top: 5rem;
     color: var(--primary-color);
-    top: 8rem;
+    background-color: var(--background-color);
     text-align: center;
-    font-size: 1.2rem;
+    padding: 1rem;
+    gap: 2rem;
 }
 
-.slideshow-heading {
-    position: absolute;
+#jump-button {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    font-size: var(--default-font-size);
 }
 
 /* Portfolio Section */
