@@ -70,13 +70,10 @@ a:hover {
 /* Navigation Section */
 
 #navigation-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     height: fit-content;
+    width: 100%;
     min-height: 5vh;
-    padding: 0.5rem 1rem;
+    position: sticky;
 }
 
 #hamburger {
@@ -103,16 +100,12 @@ a:hover {
 #menu {
     display: none;
     background-color: var(--secondary-color);
-    position: absolute;
-    top: 100%; /* directly below nav */
-    right: 0;
-    min-width: 12rem;
     z-index: 1;
+    max-height: 4vh;
 }
 
 #menu a {
     display: block;
-    padding: 1rem;
     color: var(--primary-color);
 }
 
