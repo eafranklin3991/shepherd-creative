@@ -8,10 +8,9 @@
 }
 
 :root {
-  --primary-color: #3C6067;
-  --secondary-color: #FFFFFF;
-  --tertiary-color: #0C0A3E;
-  --background-color: #FFFFFFB3;
+  --primary-color: #FFFFFF;
+  --secondary-color: black;
+  --tertiary-color: red;
 
   --default-font-size: calc(0.15rem + 1.5vw);
   --heading-font-size: calc(1rem + 1.5vw);
@@ -49,11 +48,13 @@ a:hover {
 }
 
 .big-container {
-    height: 50vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    
+    height: 50vh;
+    background-color: black;
 }
 
 #footer {
@@ -76,19 +77,6 @@ a:hover {
     height: fit-content;
     min-height: 5vh;
     padding: 0.5rem 1rem;
-}
-
-#logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 25%;
-}
-
-#logo {
-    max-height: 4vh;
-    height: auto;
 }
 
 #hamburger {
@@ -130,38 +118,22 @@ a:hover {
 
 /* Hero Section */
 
-#slideshow-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-#slideshow {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    object-fit: cover;
+#hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #slideshow-text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: 0.25rem;
 
-    position: absolute;
-    top: 2rem;
-    color: var(--primary-color);
-    background-color: var(--background-color);
-    text-align: center;
-    height: fit-content;
-    width: 100%;
-}
-
-#slideshow-heading {
-    font-size: var(--heading-font-size);
-    font-weight: bold;
+    flex: 1;
+    color: white;
+    text-align: left;
+    padding: 1rem;
 }
 
 #slideshow-paragraph {
@@ -179,6 +151,17 @@ a:hover {
     font-size: var(--default-font-size);
     margin: 1rem 0 0.5rem;
 }
+
+#slideshow {
+    flex: 2;
+
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Trust By Section */
+
+/* Service Section */
 
 /* Portfolio Section */
 
