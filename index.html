@@ -3,43 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Shepherd specializes in commercial videography and strategic marketing for small businesses.">
     <link rel="stylesheet" href="style.css">
-    <title>The Shepherd | Commercial Vidoegraphy</title>
+    <link rel="icon" type="image/png" href="images/TheShepherd_submark_mist.png">
+    <title>The Shepherd | Commercial Videography</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <section id="header">
-        <img id="logo" src="images/theshepherd_horizontal_mist.svg">
+    <!-- Navigation -->
 
-        <div id="navigation">
-            <ul role="list">
-                <li><a href="#portfolio-container">My Portfolio</a></li>
-                <li><a href="#schedule-container">Schedule a Consultation</a></li>
-            </ul>
-        </div>
-    </section>
+    <nav class="big-container" id="navigation-container">
 
-    <!-- Hero Section -->
-
-    <section id="hero">
-        <div id="hero-left">
-            <h1 id="hero-header">Dynamic Marketing That Takes Chances</h1>
-            <h2>
-                At the Shepherd, we help you build a unique content system that speaks to your audience, builds trust, and drives action.
-            </h2>
-            <a href="#schedule" id="schedule-button">Schedule a Consultation</a>
+        <div class="container" id="logo-container">
+            <img id="logo" src="images/theshepherd_horizontal_mist.svg" alt="The Shepherd Creative logo">
         </div>
 
-        <div id="hero-right">
-            <iframe src="https://player.vimeo.com/video/1080413327?h=f2007ac1bc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"></iframe>
+        <!-- Hamburger Icon -->
+
+        <button id="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Menu Items -->
+        <div class="container" id="menu">
+            <a href="#">Our Services</a>
+            <a href="#">Our Portfolio</a>
+            <a href="#">Schedule a Consultation</a>
         </div>
 
-    </section>
+    </nav>
 
-    <!-- Portfolio Section -->
+    <!-- Hero -->
+
+    <div class="big-container" id="hero-container">
+
+        <div class="container" id="slideshow-container">
+            
+            <video id="slideshow" src="videos/slideshow.mp4" muted autoplay loop alt="Slideshow of The Shepherd's portfolio."></video>
+            
+            <div class="container" id="slideshow-text">
+                <h2 id="slideshow-heading">Dynamic Marketing That Takes Chances</h2>
+                <p id="slide-paragraph">At the Shepherd, we help you build a content system that speaks to your audience, builds trust, and drives action.</p>
+                <a href="#schedule-container">
+                    <button id="jump-button">Schedule a Consultation</button>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Portfolio -->
      
-     <section id="portfolio" class="portfolio">
+     <div class="big-container" id="portfolio-container">
         <div class="container">
             <div class="portfolio-card">
                 <iframe src="https://player.vimeo.com/video/1080413327?h=f2007ac1bc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"></iframe>
@@ -58,21 +77,15 @@
                 <div class="text">This is a description!</div>
             </div>
         </div>
-     </section>
+    </div>
 
-    <!-- Statistics Section -->
-     <section id="statistics">
-        <div class="container"></div>
-     </section>
+    <!-- Testimonials -->
 
-    <!-- Testimonials Section -->
-     <section class="testimonials">
-        <div class="container"></div>
-     </section>
+     <div class="big-container" id="testimonials-container"></div>
 
-    <!-- Schedule Section -->
+    <!-- Schedule -->
 
-    <section id="schedule">
+    <div class="big-container" id="schedule-container">
         <div class="container">
             <div id="calendar-container">INSERT CALENDAR</div>
             
@@ -84,8 +97,13 @@
                 <button class="schedule-button">Schedule a Consultation</button>
             </div>
         </div>
-    </section>
+    </div>
 
-    <div id="footer">© 2025 The Shepherd Creative Limited Liability Company</div>
+    <!-- Footer -->
+
+    <div class="big-container" id="footer">
+        <p id="footer-text">© 2025 The Shepherd Creative Limited Liability Company</p>
+    </div>
+
 </body>
 </html>
