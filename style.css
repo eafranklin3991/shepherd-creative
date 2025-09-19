@@ -13,7 +13,7 @@
   --tertiary-color: #FF9A00;
   --background-color: #FFFFFF80;
 
-  --default-font-size: calc(0.75rem + 1.5vw);
+  --default-font-size: calc(0.5rem + 1.5vw);
 }
 
 h1, h2, h3, p {
@@ -36,6 +36,10 @@ html, body {
 img {
     display: block;
     max-inline-size: 100%;
+}
+
+button {
+    all: unset;
 }
 
 a {
@@ -72,6 +76,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
 
+    height: fit-content;
     min-height: 5vh;
     padding: 0.5rem 1rem;
 }
@@ -93,6 +98,8 @@ a:hover {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
+
+    max-height: 4vh;
     cursor: pointer;
     background: none;
     border: none;
@@ -105,6 +112,7 @@ a:hover {
     width: 1.5rem;
     margin: 0.25rem 0;
     display: block;
+    flex-shrink: 0;
 }
 
 #menu {
@@ -145,12 +153,10 @@ a:hover {
 
     position: absolute;
     top: 2rem;
-    width: 100%;
     color: var(--primary-color);
     background-color: var(--background-color);
     text-align: center;
-    padding: 1rem;
-    gap: 2rem;
+    height: fit-content;
 }
 
 #slideshow-text * {
@@ -165,6 +171,7 @@ a:hover {
     cursor: pointer;
     padding: 0.6rem 1.2rem;
     font-size: var(--default-font-size);
+    margin: 0.5rem 0 0.5rem;
 }
 
 /* Portfolio Section */
