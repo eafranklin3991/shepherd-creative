@@ -3,21 +3,22 @@
 @import "modern-normalize";
 
 @font-face {
-    font-family: "Spinnaker";
-    src: url(fonts/Spinnaker/Spinnaker-Regular.ttf) format("truetype");
+    font-family: "Merriweather";
+    src: url(fonts/Merriweather/Merriweather-VariableFont_opsz\,wdth\,wght.ttf) format("opentype");
 }
 
 :root {
   --primary-color: #3C6067;
   --secondary-color: #FFFFFF;
-  --tertiary-color: #FF9A00;
-  --background-color: #FFFFFF80;
+  --tertiary-color: #0C0A3E;
+  --background-color: #FFFFFFB3;
 
-  --default-font-size: calc(0.5rem + 1.5vw);
+  --default-font-size: calc(0.15rem + 1.5vw);
+  --heading-font-size: calc(1rem + 1.5vw);
 }
 
 h1, h2, h3, p {
-    margin: 0;
+    all: unset;
 }
 
 html, body {
@@ -29,7 +30,7 @@ html, body {
     margin: 0;
     color: var(--primary-color);
     font-size: var(--default-font-size);
-    font-family: "Spinnaker";
+    font-family: "Merriweather";
     line-height: 1.5;
 }
 
@@ -110,7 +111,7 @@ a:hover {
     transition: 0.4s;
     height: 0.15rem;
     width: 1.5rem;
-    margin: 0.25rem 0;
+    margin: 0.15rem 0;
     display: block;
     flex-shrink: 0;
 }
@@ -150,6 +151,8 @@ a:hover {
 #slideshow-text {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     position: absolute;
     top: 2rem;
@@ -157,10 +160,17 @@ a:hover {
     background-color: var(--background-color);
     text-align: center;
     height: fit-content;
+    width: 100%;
 }
 
-#slideshow-text * {
+#slideshow-heading {
+    font-size: var(--heading-font-size);
+    font-weight: bold;
+}
+
+#slideshow-paragraph {
     font-size: var(--default-font-size);
+    max-width: 60ch;
 }
 
 #jump-button {
@@ -171,7 +181,7 @@ a:hover {
     cursor: pointer;
     padding: 0.6rem 1.2rem;
     font-size: var(--default-font-size);
-    margin: 0.5rem 0 0.5rem;
+    margin: 1rem 0 0.5rem;
 }
 
 /* Portfolio Section */
