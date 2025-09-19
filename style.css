@@ -17,7 +17,7 @@
   --heading-font-size: calc(1rem + 1.5vw);
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, button {
     all: unset;
 }
 
@@ -37,10 +37,6 @@ html, body {
 img {
     display: block;
     max-inline-size: 100%;
-}
-
-button {
-    all: unset;
 }
 
 a {
@@ -192,15 +188,16 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     text-align: center;
 }
 
 #schedule-button {
     text-align: center;
     font-weight: bold;
-    background-color: #3C6067;
-    color: #FFFFFF;
-    border: solid 1px #3C6067;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: solid 1px var(--primary-color);
     border-radius: 20rem;
     font-size: 2rem;
     width: 85%;
@@ -212,7 +209,7 @@ a:hover {
 #calendar-container {
     flex: 1;
     text-align: center;
-    border: solid #220C10;
+    border: solid var(--tertiary-color);
     margin: 1rem;
 }
 
@@ -225,26 +222,26 @@ a:hover {
 }
 
 input {
-    background-color: #0C0A3E;
-    color: #FFFFFF;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
     font-size: 1rem;
 }
 
 input::placeholder {
-    color: #FFFFFF;
+    color: var(--secondary-color);
 }
 
 textarea {
     flex: 4;
-    background-color: #0C0A3E;
-    color: #FFFFFF;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
     font-size: 1rem;
     font: inherit;
     border-radius: 5px;
 }
 
 textarea::placeholder {
-    color: #FFFFFF;
+    color: var(--secondary-color);
 }
 
 /* Mobile Section */
