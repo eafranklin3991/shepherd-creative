@@ -38,15 +38,6 @@ img {
     max-inline-size: 100%;
 }
 
-a {
-    text-decoration: none;
-    color: var(--primary-color)
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 .big-container {
     display: flex;
     justify-content: space-around;
@@ -112,6 +103,12 @@ a:hover {
     color: var(--primary-color);
     background-color: var(--secondary-color);
     padding: 0.5rem;
+    text-decoration: none;
+}
+
+menu a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--tertiary-color);
 }
 
 /* Hero Section */
@@ -126,12 +123,13 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.25rem;
+    justify-content: space-between;
 
     flex: 1;
     color: white;
     text-align: left;
-    padding: 1rem;
+    padding: 0 1rem 0 1rem;
+    height: 100%;
 }
 
 #slideshow-paragraph {
@@ -139,15 +137,18 @@ a:hover {
     max-width: 60ch;
 }
 
+#slideshow-paragraph em {
+    font-weight: bold;
+}
+
 #jump-button {
     color: var(--secondary-color);
     background-color: var(--primary-color);
-    border: none;
     border-radius: 0.5rem;
     cursor: pointer;
     padding: 0.6rem 1.2rem;
     font-size: var(--default-font-size);
-    margin: 1rem 0 0.5rem;
+    text-decoration: none;
 }
 
 #slideshow {
@@ -158,6 +159,16 @@ a:hover {
 }
 
 /* Trust By Section */
+
+#trusted-by-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trusted-logo {
+    background-color: var(--primary-color);
+}
 
 /* Service Section */
 
