@@ -16,6 +16,10 @@
   --heading-font-size: calc(1rem + 1.5vw);
 }
 
+html * {
+    border: 1px solid red;
+}
+
 h1, h2, h3, p, button {
     all: unset;
 }
@@ -106,7 +110,7 @@ img {
     text-decoration: none;
 }
 
-menu a:hover {
+#menu a:hover {
     text-decoration: underline;
     text-decoration-color: var(--tertiary-color);
 }
