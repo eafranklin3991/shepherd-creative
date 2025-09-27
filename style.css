@@ -1,7 +1,5 @@
 /* General */
 
-@import "modern-normalize";
-
 @font-face {
     font-family: "Merriweather";
     src: url(fonts/Merriweather/Merriweather-VariableFont_opsz\,wdth\,wght.ttf) format("opentype");
@@ -12,34 +10,32 @@
   --secondary-color: black;
   --tertiary-color: aqua;
 
+  --font-family: "Merriweather"
   --default-font-size: calc(0.15rem + 1.5vw);
   --heading-font-size: calc(1rem + 1.5vw);
-}
-
-html * {
-    border: 1px solid red;
+  line-height: 1.5;
 }
 
 h1, h2, h3, p, button {
     all: unset;
 }
 
-html, body {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
+body {
     margin: 0;
     color: var(--primary-color);
     font-size: var(--default-font-size);
-    font-family: "Merriweather";
-    line-height: 1.5;
+    font-family: var(--font-family);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 img {
     display: block;
-    max-inline-size: 100%;
+    max-width: 100%;
 }
 
 .big-container {
@@ -48,7 +44,7 @@ img {
     align-items: center;
     flex-wrap: wrap;
     
-    height: 50vh;
+    min-height: 50vh;
     background-color: black;
 }
 
@@ -66,8 +62,6 @@ img {
 
 #navigation-container {
     display: inline-block;
-    height: fit-content;
-    width: 100%;
     min-height: 5vh;
     position: sticky;
     top: 0;
@@ -234,38 +228,4 @@ textarea {
 
 textarea::placeholder {
     color: var(--secondary-color);
-}
-
-/* Mobile Section */
-
-@media (max-width: 786px) {
-    #header {
-        height: 25vh;
-    }
-
-    #hero {
-        flex-wrap: wrap;
-        height: 100vh;
-    }
-
-    #portfolio-container {
-        flex-wrap: wrap;
-        height: 100vh;
-    }
-
-    #schedule-container {
-        height: 100vh;
-    }
-
-    #logo {
-        flex: 0;
-        height: 10%;
-        width: 100%;
-        margin: 0;
-    }
-
-    #navigation {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
 }
