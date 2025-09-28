@@ -3,121 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Shepherd specializes in commercial videography and strategic marketing for small businesses.">
+    <meta name="description" content="The Shepherd Creative specializes in commercial videography and strategic marketing for small businesses and non-profits.">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/TheShepherd_submark_mist.png">
+    <link rel="icon" type="image/png" href="images/shepherd-logos/icons/TheShepherd_Icon_Mist-Light.png">
     <link rel="preload" href="/videos/shepherd_video_vid_2_compressed.mp4" as="video" type="video/mp4">
     <title>The Shepherd | Commercial Videography</title>
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="wrapper">
-        
-        <!-- Navigation -->
-
-        <nav class="big-container" id="navigation-container">
-
-            <!-- Hamburger Icon -->
-
-            <button id="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">
+    
+    <!-- Header -->
+    <div class="header">
+        <img src="images/shepherd-logos/submarks/TheShepherd_Submark-NoWords_Mist-Light_100px.png" alt="The Shepherd Creative Logo">
+        <nav>
+            <!-- Hamburger -->
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-
             <!-- Menu Items -->
-            <div class="container" id="menu">
-                <a href="#">Our Services</a>
-                <a href="#">Our Portfolio</a>
-                <a href="#">Schedule a Consultation</a>
+            <div class="menu">
+                <ul>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#portfolio">Our Portfolio</a></li>
+                    <li><a href="#schedule">Schedule a Consultation Call</a></li>
+                </ul>
             </div>
-
         </nav>
+    </div>
 
-        <!-- Hero -->
-
-        <div class="big-container" id="hero-container">
-
-            <div class="container" id="slideshow-text">
-                <img id="logo" src="images/theshepherd_horizontal_mist.svg" alt="The Shepherd Creative logo">
-                <p id="slideshow-paragraph">We bring your vision to life with videos that <em>grow your brand</em>, <em>get results</em>, and <em>never stop working for you.</em></p>
-                <a id="jump-button" href="#schedule-container">Schedule a Consultation</a>
-            </div>
-                
-            <video id="slideshow" muted autoplay loop playsinline preload="auto">
-                <source src="videos/shepherd_video_vid_2_compressed.mp4" type="video/mp4">
-                <source src="videos/shepherd_video_vid_2_compressed_mobile.mp4" type="video/mp4" media="(max-width: 786px)">
-                Your browser does not support the video tag.
-            </video>
-
+    <!-- Hero -->
+    <div class="hero">
+        <div class="action-call">
+            <img src="images/shepherd-logos/horizontal/TheShepherd_Horizontal_Mist-Light_1000px.png" alt="The Shepherd Creative Logo">
+            <h1>We craft compelling videos that <em>tell your story</em>, <em>build trust with your audience</em>, and <em>drive meaningful results</em>.</h1>
+            <a href="#schedule">Schedule a Consultation Call</a>
         </div>
+        <video src="videos/shepherd_video_vid_2_compressed.mp4" type="video/mp4" muted autoplay loop preload="auto">Your browser does not support the video tag.</video>
+    </div>
+    
+    <div class="wrapper">
 
         <!-- Trusted By -->
-
-        <div class="big-container" id="trusted-by-container">
-
-            <img class="trusted-logo" id="trusted-logo-1" src="" alt="Logo for Concord Christian School" id="logo-1">
-            <img class="trusted-logo" id="trusted-logo-2" src="" alt="Logo for DSFS" id="logo-2">
-            <img class="trusted-logo" id="trusted-logo-3" src="" alt="Logo for East Tennessee Children's Hospital" id="logo-3">
-            <img class="trusted-logo" id="trusted-logo-4" src="" alt="" id="logo-4">
-
+        <div class="trusted-by">
+            <h1>Trusted by Small Businesses and Non-Profits</h1>
+            <img src="images/trusted-by/U logo transparent white 1_100px.png" alt="United Panel Logo">
+            <img src="images/trusted-by/DSFS logo white_100px.png" alt="Dripping Springs Family Smiles Logo">
+            <img src="images/trusted-by/mission of hope logo_100px.png" alt="Mission of Hope Logo">
+            <img src="images/trusted-by/CCS white_100px.png" alt="Concord Christian School Logo">
+            <img src="images/trusted-by/east tn children's logo white_100px.png" alt="East Tennessee Children's Hospital Logo">
         </div>
 
         <!-- Services -->
-
-        <div class="big-container" id="services-container">
-
-            <div class="container" id="services-text"></div>
-
-            <video src="" id="pitch-video" muted loop playsinline preload="metadata"></video>
-            
-        </div>
+         <div class="services">
+            <h3>Our Services</h3>
+            <ul>
+                <li>Build Lasting Strategies</li>
+                <li>Create Core Content</li>
+                <li>Receive Ongoing Content Support</li>
+            </ul>
+            <video src="https://player.vimeo.com/video/1080413327?h=f2007ac1bc" muted autoplay loop></video>
+         </div>
 
         <!-- Portfolio -->
-        
-        <div class="big-container" id="portfolio-container">
-            <div class="container" id="card-container">
-                <div class="portfolio-card" id="portfolio-card-1">
-                    <div class="card-text" id="card-1-text">This is a description!</div>
-                </div>
-                <div class="portfolio-card" id="portfolio-card-2">
-                    <div class="card-text" id="card-2-text">This is a description!</div>
-                </div>
-                <div class="portfolio-card" id="portfolio-card-3">
-                    <div class="card-text" id="card-3-text">This is a description!</div>
-                </div>
-                <div class="portfolio-card" id="portfolio-card-4">
-                    <div class="card-text" id="card-4-text">This is a description!</div>
-                </div>
+        <div class="portfolio">
+            <h3>Our Portfolio</h3>
+            <div class="card">
+                <p class="quote">The videos made our website something we're proud to send to prospective clients. Sean makes it easy!</p>
+                <p class="quote-attribution">-Michael S.</p>
+                <video src="https://www.youtube.com/watch?v=gAffa-7fJpc&t=1s"></video>
+            </div>
+            <div class="card">
+                <p class="quote">Sean made me money on day one. I can't recommend him enough if you want to get the best out of your business.</p>
+                <p class="quote-attribution">-Dr. Chris D.</p>
+                <video src="https://www.youtube.com/watch?v=5-qOYQMfisc"></video>
             </div>
         </div>
-
-        <!-- Testimonials -->
-
-        <div class="big-container" id="testimonials-container"></div>
 
         <!-- Schedule -->
-
-        <div class="big-container" id="schedule-container">
-            <div class="container">
-                <div id="calendar-container">INSERT CALENDAR</div>
-                
-                <div id="form-container">
-                    <input id="name-input" type="text" placeholder="Name">
-                    <input id="email-input" type="email" placeholder="Email">
-                    <input id="phone-number-input" type="phone" placeholder="Phone Number">
-                    <textarea id="tell-me-more-box" placeholder="Tell me more about your company..."></textarea>
-                    <button class="schedule-button">Schedule a Consultation</button>
-                </div>
-            </div>
+        <div class="schedule">
+            <h3>Schedule a Consultation Call</h3>
+            <p>Call: </p>
+            <p>Email: </p>
+            <div class="calendar"></div>
+            <form action=""></form>
         </div>
     </div>
-
+    
     <!-- Footer -->
-
-    <div class="big-container" id="footer">
-        <p id="footer-text">© 2025 The Shepherd Creative Limited Liability Company</p>
-    </div>
+    <div class="footer">© 2025 The Shepherd Creative Limited Liability Company</div>
 
 </body>
 </html>
